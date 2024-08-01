@@ -3,19 +3,18 @@
   width: 100%;
   margin: 0 auto;
   padding: 20px;
-  background-color: #e7d0ca; 
+  background-color: var(--color-primary);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .add-movie-form h2 {
   margin-bottom: 20px;
-  color: #3d405b;
+  color: var(--color-text-dark);
 }
 
 .add-movie-form input,
@@ -23,11 +22,11 @@
 .add-movie-form textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #81b29a; 
+  border: 1px solid var(--color-border);
   border-radius: 4px;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
-  background-color: #f4f1de; 
+  background-color: var(--color-text-light);
 }
 
 .add-movie-form input[type="range"] {
@@ -35,7 +34,7 @@
   -webkit-appearance: none;
   appearance: none;
   height: 8px;
-  background: #81b29a; 
+  background: var(--color-secondary);
   outline: none;
   opacity: 0.7;
   transition: opacity 0.2s;
@@ -46,7 +45,7 @@
   appearance: none;
   width: 20px;
   height: 20px;
-  background: #3d405b; /
+  background: var(--color-text-dark);
   cursor: pointer;
   border-radius: 50%;
 }
@@ -54,7 +53,7 @@
 .add-movie-form input[type="range"]::-moz-range-thumb {
   width: 20px;
   height: 20px;
-  background: #3d405b; 
+  background: var(--color-text-dark);
   cursor: pointer;
   border-radius: 50%;
 }
@@ -68,7 +67,7 @@
 
 .add-movie-form .rating-section span {
   font-size: 14px;
-  color: #3d405b;
+  color: var(--color-text-dark);
 }
 
 .add-movie-form .button-group {
@@ -85,23 +84,22 @@
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .add-movie-form .button-group .add-button {
-  background-color: #81b29a; 
-  color: #3d405b;
+  background-color: var(--color-secondary);
+  color: var(--color-text-dark);
 }
 
 .add-movie-form .button-group .clear-button {
-  background-color: #f2cc8f; 
-  color: #3d405b;
+  background-color: var(--color-accent);
+  color: var(--color-text-dark);
 }
 
 .add-movie-form .button-group .add-button:hover {
-  background-color: #6a9c7f;
+  background-color: var(--color-hover);
 }
 
 .add-movie-form .button-group .clear-button:hover {
-  background-color: #e0b975;
+  background-color: var(--color-hover-accent);
 }
