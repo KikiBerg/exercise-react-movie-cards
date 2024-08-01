@@ -10,7 +10,7 @@ interface IMovieCardProps {
 export function MovieCard({ movie, onDelete }: IMovieCardProps) {
   return (
     <div className="movie-card" onClick={() => onDelete(movie.id)}>
-      <h2>{movie.title}</h2>
+      <h3>{movie.title}</h3>
       <p>{movie.rating} / 5</p>
       <p>{movie.genre}</p>
       <p>{movie.description}</p>
