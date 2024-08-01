@@ -49,13 +49,17 @@ export function AddMovie({ onAddMovie }: IAddMovieProps): ReactElement {
         placeholder="Title"
         required
       />
-      <input
-        type="range"
-        min="1"
-        max="5"
-        value={rating}
-        onChange={(e) => setRating(e.target.value)}
-      />
+      <div className="rating-section">
+        <span>1</span>
+        <input
+          type="range"
+          min="1"
+          max="5"
+          value={rating}
+          onChange={(e) => setRating(e.target.value)}
+        />
+        <span>5</span>
+      </div>
       <select
         value={genre}
         onChange={(e) => setGenre(e.target.value)}
@@ -74,8 +78,8 @@ export function AddMovie({ onAddMovie }: IAddMovieProps): ReactElement {
         required
       />
       <div className="button-group">
-      <button type="submit" className="add-button">Add</button>
-      <button type="button" className="clear-button" onClick={handleClear}>Clear</button>
+        <button type="submit" className="add-button">Add</button>
+        <button type="button" className="clear-button" onClick={handleClear}>Clear</button>
       </div>
     </form>
   );
