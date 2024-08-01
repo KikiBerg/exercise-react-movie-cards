@@ -74,8 +74,8 @@ export function AddMovie({ onAddMovie }: IAddMovieProps): ReactElement {
         required
       />
       <div className="button-group">
-        <button type="submit">Add</button>
-        <button type="button" onClick={handleClear}>Clear</button>
+      <button type="submit" className="add-button">Add</button>
+      <button type="button" className="clear-button" onClick={handleClear}>Clear</button>
       </div>
     </form>
   );
